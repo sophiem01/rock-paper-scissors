@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+    <div class="header"></div>
+
+    <div class="textsect">
+        <span id="results">Click any button to play.</span>
+        </div>
+
+    <h1>Your Move:</h1>
+    <div class="container">
+        <button ID="buttonRock" onclick="playGame('rock')">Rock</button>
+        <button ID="buttonPaper" onclick="playGame('paper')">Paper</button>
+        <button ID="buttonScissors" onclick="playGame('scissors')">Scissors</button>
+    </div>
+
+    <h1>The Computer Picks:</h1>
+    <div class="container2">
+        <button ID="cbutt1">Rock</button>
+        <button ID="cbutt2">Paper</button>
+        <button ID="cbutt3">Scissors</button>
+    </div>
+
+
+    <h1>Round:</h1>
+    <div id="roundsnum"></div>
+
+    <div class="buttonline">
+    <button id= "restartbutton" class="hidden" onclick="location.reload()">Restart?</button>
+</div>
+
+    <h1>Score:</h1>
+    <div class="scores">
+        <div class="Sc1">Computer: <span id="score1"></span></div>
+        <div class="Sc2">You: <span id="score2"></span> </div>
+    </div>
+    
+
+    <div class="bottom"></div>
+    
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
